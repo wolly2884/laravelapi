@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+use App\Http\Controllers\HomeController;
+Route::resource('/HomeController',HomeController::class);
+Route::get('/HomeController',HomeController::class);
